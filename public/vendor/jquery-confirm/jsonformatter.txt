@@ -1,0 +1,989 @@
+﻿{
+  "id": "83",
+  "token": "tIi0wyOQfppQ2WcHn8CnitPsLcqdjocjde6U3OeYsU1C44rdNXTg73arGKoWoRj6XqWSRtK9rDSUEqwv0rHQUZ0K100HCbeI6ORCb8E0VJ3XTgA1qkqu5RwwA8cUhtgKudG3dMILjqDkBk1341C085CJIMpulOFXO0iIFngYhJaMD72Rt8ias36vhkR1vi8",
+  "detail": [
+    {
+      "id": "1",
+      "name": "Documentos",
+      "state": true,
+      "items_photos": [
+        {
+          "id": "575",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "1",
+            "name": "Foto de la matrícula (Frontal)",
+            "comment": "Esta foto será la imagen de tu póliza de seguros,\r\n             por eso cerciórate que la foto permita leer claramente los datos reflejados en tu matricula.",
+            "category_item_photos": [
+              {
+                "id": "1",
+                "name": "Documentos",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "576",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "2",
+            "name": "Foto de la matrícula (Posterior)",
+            "comment": "Cerciórate que la foto sea clara y permita\r\n                    leer los datos de la matrícula, tu información es muy valiosa para nosotros.",
+            "category_item_photos": [
+              {
+                "id": "1",
+                "name": "Documentos",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "577",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "3",
+            "name": "Foto contrato compraventa",
+            "comment": "Foto contrato compraventa",
+            "category_item_photos": [
+              {
+                "id": "1",
+                "name": "Documentos",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "578",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "4",
+            "name": "Foto de la cédula (Frontal)",
+            "comment": "Foto de la cédula (Frontal)",
+            "category_item_photos": [
+              {
+                "id": "1",
+                "name": "Documentos",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "579",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "5",
+            "name": "Foto de la cédula (Posterior)",
+            "comment": "Foto de la cédula (Posterior)",
+            "category_item_photos": [
+              {
+                "id": "1",
+                "name": "Documentos",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "580",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "6",
+            "name": "Foto de la licencia (Frontal)",
+            "comment": "Foto de la licencia (Frontal)",
+            "category_item_photos": [
+              {
+                "id": "1",
+                "name": "Documentos",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "581",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "7",
+            "name": "Foto de la licencia (Posterior)",
+            "comment": "Foto de la licencia (Posterior)",
+            "category_item_photos": [
+              {
+                "id": "1",
+                "name": "Documentos",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        }
+      ],
+      "__typename": "CategoryItemPhotoTaken"
+    },
+    {
+      "id": "2",
+      "name": "Fotos del vehículo",
+      "state": true,
+      "items_photos": [
+        {
+          "id": "582",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "8",
+            "name": "Foto frontal",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "583",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "9",
+            "name": "Foto Posterior",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "584",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "10",
+            "name": "Foto Lateral derecha de adelante hacia atrás",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "585",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "11",
+            "name": "Foto Lateral derecha de atrás hacia adelante",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "586",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "12",
+            "name": "Foto lateral izquierda de atrás hacia adelante",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "587",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "13",
+            "name": "Foto lateral izquierda de adelante hacia atrás",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "588",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "14",
+            "name": "Placa delantera",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "589",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "15",
+            "name": "Placa trasera",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "590",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "16",
+            "name": "Foto puerta conductor",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "591",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "17",
+            "name": "Foto puerta pasajero",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "592",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "18",
+            "name": "Fotografía puerta posterior derecha",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "593",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "19",
+            "name": "Fotografía puerta posterior izquierda",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "594",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "20",
+            "name": "Fotografía tablero de instrumentos lateral izquierdo",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "595",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "21",
+            "name": "Fotografía tablero de instrumentos lateral derecho",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "596",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "22",
+            "name": "Foto del tablero de instrumentos",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "597",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "23",
+            "name": "Foto kilometraje",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "598",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "24",
+            "name": "Foto de Radio y Aire acondicionado",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "599",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "25",
+            "name": "Foto cámara de retro",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "600",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "26",
+            "name": "Airbags",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "601",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "27",
+            "name": "Foto asientos delanteros",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "602",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "28",
+            "name": "Foto asientos posteriores",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "603",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "29",
+            "name": "Foto Techo corredizo (SumRoof)",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "604",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "30",
+            "name": "Foto Cajuela",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "605",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "31",
+            "name": "Foto Llanta de emergencia",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "606",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "32",
+            "name": "Foto llanta delantera izquierda",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "607",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "33",
+            "name": "Foto llanta delantera derecha",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "608",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "34",
+            "name": "Foto llanta posterior izquierda",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "609",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "35",
+            "name": "Foto llanta posterior derecha",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "610",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "36",
+            "name": "Foto Habitáculo del motor",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "611",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "37",
+            "name": "Foto Motor",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "612",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "38",
+            "name": "Foto numeración del chasis en alto relieve",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "613",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "39",
+            "name": "Foto Stickers VIN",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "614",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "40",
+            "name": "Foto Plaqueta panorámica VIN",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "615",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "41",
+            "name": "Foto Extras",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        },
+        {
+          "id": "616",
+          "company": {
+            "id": "8",
+            "name": "Seguros Sucre SA",
+            "__typename": "Company"
+          },
+          "item_photo": {
+            "id": "42",
+            "name": "Foto Daño",
+            "comment": "",
+            "category_item_photos": [
+              {
+                "id": "2",
+                "name": "Fotos del vehículo",
+                "__typename": "CategoryItemPhoto"
+              }
+            ],
+            "__typename": "ItemPhoto"
+          },
+          "taken_photo": null,
+          "__typename": "CompanyItemPhotoTaken"
+        }
+      ],
+      "__typename": "CategoryItemPhotoTaken"
+    }
+  ],
+  "__typename": "CategoryItemPhotoTakenByLink"
+}
