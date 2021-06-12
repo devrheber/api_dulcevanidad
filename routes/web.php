@@ -44,5 +44,3 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('deleteImage', [ConfigurationController::class, 'deleteImage'])->name('deleteImage');
     Route::get('dtArticle', [ConfigurationController::class, 'dtArticle'])->name('dtSubCategory');
 });
-
-Route::get('getCatalogArticles', [CatalogController::class, 'getCatalogArticles'])->name('getCatalogArticles');

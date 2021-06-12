@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CatalogController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::get('getCategories', [CatalogController::class, 'getCategories'])->name('getCategories');
+Route::get('getCatalogArticles', [CatalogController::class, 'getCatalogArticles'])->name('getCatalogArticles');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Category;
 use App\Models\SubCategory;
 use Illuminate\Http\Request;
 
@@ -26,6 +27,10 @@ class CatalogController extends Controller
 
     public function pay() {
         return view('catalog.pay');
+    }
+
+    public function getCategories() {
+        return response()->json(Category::where('state', 1)->get());
     }
 
     public function getCatalogArticles() {
