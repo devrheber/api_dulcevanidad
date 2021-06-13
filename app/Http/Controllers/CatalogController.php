@@ -34,6 +34,6 @@ class CatalogController extends Controller
     }
 
     public function getCatalogArticles() {
-        return response()->json(Article::where('state', 1)->get());
+        return response()->json(Article::where('state', 1)->with('images')->get());
     }
 }
