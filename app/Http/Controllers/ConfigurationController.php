@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use App\Models\ArticleImage;
+use App\Models\Bank;
 use App\Models\Category;
+use App\Models\PaymentMethod;
 use App\Models\SubCategory;
 use Exception;
 use Illuminate\Http\Request;
@@ -118,5 +120,30 @@ class ConfigurationController extends Controller
         $image = ArticleImage::find($request->post('id'));
         Storage::delete($image->url);
         return response()->json($image->delete());
+    }
+
+    public function payment_methods() {
+        $data = array(
+            'banks' => Bank::where('state', 1)->get()
+        );
+        return view('configuration.payment_methods')->with($data);
+    }
+
+    public function dtPaymentMethods() {
+        return datatables()->of(PaymentMethod::with('bank')->get())->toJson();
+    }
+
+    public function savePaymentMethod(Request $request) {
+        if ($request->post('id') !== null) {
+            $payment_method = PaymentMethod::find($request->post('id'));
+        } else {
+            $payment_method = new PaymentMethod;
+        }
+
+        $payment_method->reference = $request->post('reference');
+        $payment_method->state = $request->post('state');
+        $payment_method->bank_id = $request->post('bank');
+        $payment_method->type = $request->post('type');
+        return response()->json($payment_method->save());
     }
 }

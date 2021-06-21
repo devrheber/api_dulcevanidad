@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Bank;
 use App\Models\Category;
 use App\Models\SubCategory;
 use Illuminate\Http\Request;
@@ -33,7 +34,22 @@ class CatalogController extends Controller
         return response()->json(Category::where('state', 1)->get());
     }
 
+    public function getSubCategories() {
+        return response()->json(SubCategory::where('state', 1)->get());
+    }
+
     public function getCatalogArticles() {
         return response()->json(Article::where('state', 1)->with('images')->get());
+    }
+
+    public function getPaymentMethod() {
+        return response()->json(Bank::with('payment_methods')->get());
+    }
+
+    public function checkShoppingCart(Request $request) {
+        for($x = 0; $x < count($request->post('article')); $x++) {
+            $article = Article::find($request->post('article')[$x]);
+            // if ($article)
+        }
     }
 }

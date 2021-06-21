@@ -43,4 +43,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('updateDiscount', [ConfigurationController::class, 'updateDiscount'])->name('updateDiscount');
     Route::post('deleteImage', [ConfigurationController::class, 'deleteImage'])->name('deleteImage');
     Route::get('dtArticle', [ConfigurationController::class, 'dtArticle'])->name('dtSubCategory');
+    Route::get('metodos_pago', [ConfigurationController::class, 'payment_methods'])->name('payment_methods');
+    Route::get('dtPaymentMethods', [ConfigurationController::class, 'dtPaymentMethods'])->name('dtPaymentMethods');
+    Route::post('savePaymentMethod', [ConfigurationController::class, 'savePaymentMethod']);
 });

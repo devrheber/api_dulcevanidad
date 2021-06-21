@@ -241,6 +241,10 @@ return [
                     'text'    => 'Artículos',
                     'url'     => '/articulos',
                 ],
+                [
+                    'text'    => 'Métodos de Pago',
+                    'url'     => '/metodos_pago',
+                ],
             ],
         ],
     ],
