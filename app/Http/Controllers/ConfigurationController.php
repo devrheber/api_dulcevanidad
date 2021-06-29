@@ -67,7 +67,7 @@ class ConfigurationController extends Controller
     }
 
     public function dtArticle() {
-        return datatables()->of(Article::where('state', 1)->with('sub_category', 'images')->get())->toJson();
+        return datatables()->of(Article::with('sub_category', 'images')->get())->toJson();
     }
 
     public function saveArticle(Request $request) {
@@ -144,6 +144,7 @@ class ConfigurationController extends Controller
         $payment_method->state = $request->post('state');
         $payment_method->bank_id = $request->post('bank');
         $payment_method->type = $request->post('type');
+        $payment_method->people = $request->post('people');
         return response()->json($payment_method->save());
     }
 }

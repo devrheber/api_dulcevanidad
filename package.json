@@ -27,6 +27,7 @@
         "@fortawesome/fontawesome-free": "^5.15.3",
         "css-minify": "^1.1.0",
         "icheck-bootstrap": "^3.0.1",
+        "moment": "^2.29.1",
         "overlayscrollbars": "^1.13.1"
     }
 }

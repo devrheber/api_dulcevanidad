@@ -27,7 +27,6 @@ Route::get('/catalogo', [CatalogController::class, 'index']);
 Route::get('/carrito', [CatalogController::class, 'shop'])->name('shop');
 Route::get('/destino', [CatalogController::class, 'from'])->name('destino');
 Route::get('/pagar', [CatalogController::class, 'pay'])->name('pay');
-
 Route::group(['middleware' => 'auth'], function () {
 	Route::get('categorias', [ConfigurationController::class, 'categories']);
 	Route::post('saveCategory', [ConfigurationController::class, 'saveCategory']);

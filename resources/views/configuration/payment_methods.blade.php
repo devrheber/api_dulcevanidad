@@ -43,6 +43,12 @@
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="form-group">
+                                    <label for="people">A nombre de (*):</label>
+                                    <input type="text" class="form-control" name="people" placeholder="A nombre de" id="people" maxlength="50" required>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="form-group">
                                     <label for="bank">Estado (*):</label>
                                     <select name="state" id="state" class="form-control" required>
                                         <option value="1">ACTIVO</option>
@@ -123,6 +129,24 @@
                 }
 
                 let buttons = '<button class="btn btn-primary btn-sm prepare"><i class="fa fa-edit"></i></button>';
+                let method = '';
+                switch (aData['type']) {
+                    case 1:
+                        method = 'TRANSFERENCIA';
+                        break;
+                    case 2:
+                        method = 'AGENTE';
+                        break;
+                    case 3:
+                        method = 'YAPE';
+                        break;
+                    case 4:
+                        method = 'PLIN';
+                        break;
+                    default:
+                        break;
+                }
+                $(nRow).find('td:eq(1)').html(method);
                 $(nRow).find('td:eq(4)').html(buttons);
             }
         });
@@ -140,6 +164,7 @@
             $('#bank').val(data['bank']['id']);
             $('#type').val(data['type']);
             $('#id').val(data['id']);
+            $('#people').val(data['people']);
             toastr.info('Estás editando este registro');
         });
 
@@ -171,6 +196,7 @@
             $('#state').val(1);
             $('#bank').val('');
             $('#id').val('');
+            $('#people').val('');
         }
     </script>
 @endsection
