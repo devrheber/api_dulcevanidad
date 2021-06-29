@@ -110,6 +110,12 @@ class ConfigurationController extends Controller
         }
     }
 
+    public function updateDiscountDisable(Request $request) {
+        $article = Article::find($request->post('id'));
+        $article->stateDiscount = 0;
+        return response()->json($article->save());
+    }
+
     public function updateDiscount(Request $request) {
         $article = Article::find($request->post('id'));
         $article->stateDiscount = 1;
@@ -145,6 +151,7 @@ class ConfigurationController extends Controller
         $payment_method->bank_id = $request->post('bank');
         $payment_method->type = $request->post('type');
         $payment_method->people = $request->post('people');
+        $payment_method->cci = $request->post('cci');
         return response()->json($payment_method->save());
     }
 }

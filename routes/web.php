@@ -40,6 +40,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('saveArticle', [ConfigurationController::class, 'saveArticle']);
     Route::post('updateStateArticle', [ConfigurationController::class, 'updateStateArticle']);
     Route::post('updateDiscount', [ConfigurationController::class, 'updateDiscount'])->name('updateDiscount');
+    Route::post('updateDiscountDisable', [ConfigurationController::class, 'updateDiscountDisable'])->name('updateDiscountDisable');
     Route::post('deleteImage', [ConfigurationController::class, 'deleteImage'])->name('deleteImage');
     Route::get('dtArticle', [ConfigurationController::class, 'dtArticle'])->name('dtSubCategory');
     Route::get('metodos_pago', [ConfigurationController::class, 'payment_methods'])->name('payment_methods');

@@ -45,8 +45,8 @@
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="form-group">
-                                    <label for="price1">Precio Normal (*):</label>
-                                    <input type="text" class="form-control" name="price1" placeholder="Precio Normal" id="price1" required>
+                                    <label for="price1">Precio Unitario (*):</label>
+                                    <input type="text" class="form-control" name="price1" placeholder="Precio Unitario" id="price1" required>
                                 </div>
                             </div>
                             <div class="col-12 col-md-3" style="display: none">
@@ -169,13 +169,14 @@
                 }
 
                 $(nRow).find('td:eq(3)').html('<img src="/storage/' + aData['image'] + '" style="width: 100px"/>');
-                let prices = '<span class="font-weight-bold">PRECIO NORMAL ' + aData['price1'] + '</span></br>';
+                let prices = '<span class="font-weight-bold">PRECIO UNITARIO ' + aData['price1'] + '</span></br>';
                 prices += '<span class="font-weight-bold">PRECIO LIQUIDACIÓN ' + aData['price3'] + '</span></br>';
                 $(nRow).find('td:eq(4)').html(prices);
                 let buttons = '<button class="btn btn-primary btn-sm prepare"><i class="fa fa-edit"></i></button>';
                 if (aData['stateDiscount'] == 0) {
                     buttons += '<button type="button" class="btn btn-default btn-sm discount" title="Activar liquidación"><i class="fa fa-arrow-circle-down"></i></button>';
                 } else {
+                    buttons += '<button type="button" class="btn btn-default btn-sm disableDiscount" title="Desactivar liquidación"><i class="fa fa-arrow-circle-up"></i></button>';
                     $(nRow).addClass('bg-warning');
                 }
                 $(nRow).find('td:eq(6)').html(buttons);
@@ -227,6 +228,41 @@
                                 if (response === true) {
                                     that.parent().parent().remove();
                                     toastr.success('Imagen eliminada con éxito!');
+                                } else {
+                                    toastr.error('Ocurrió un error');
+                                }
+                            }
+                        })
+                    },
+                    Cancelar: function () {
+
+                    },
+                }
+            });
+        });
+
+        $('body').on('click', '.disableDiscount', function () {
+            let data = tblData.row( $(this).parents('tr') ).data();
+            if(data === undefined) {
+                tblData = $("#tblData").DataTable();
+                data = tblData.row( $(this).parents('tr') ).data();
+            }
+            $.confirm({
+                title: 'Confirmación!',
+                content: 'Estás seguro de desactivar el precio de liquidación?',
+                buttons: {
+                    Confirmar: function () {
+                        $.ajax({
+                            type: 'post',
+                            url: '{{route('updateDiscountDisable')}}',
+                            data: {
+                                id: data['id'],
+                                _token: '{{csrf_token()}}'
+                            },
+                            success: function (response) {
+                                if (response === true) {
+                                    tblData.ajax.reload();
+                                    toastr.success('Datos actualizados satisfactoriamente');
                                 } else {
                                     toastr.error('Ocurrió un error');
                                 }

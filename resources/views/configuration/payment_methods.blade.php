@@ -49,6 +49,12 @@
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="form-group">
+                                    <label for="cci">CCI:</label>
+                                    <input type="text" class="form-control" name="cci" placeholder="CCI" id="cci" maxlength="50">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="form-group">
                                     <label for="bank">Estado (*):</label>
                                     <select name="state" id="state" class="form-control" required>
                                         <option value="1">ACTIVO</option>
@@ -165,6 +171,7 @@
             $('#type').val(data['type']);
             $('#id').val(data['id']);
             $('#people').val(data['people']);
+            $('#cci').val(data['cci']);
             toastr.info('Estás editando este registro');
         });
 
@@ -196,6 +203,7 @@
             $('#state').val(1);
             $('#bank').val('');
             $('#id').val('');
+            $('#cci').val('');
             $('#people').val('');
         }
     </script>
