@@ -87,7 +87,7 @@
                 <h2 class="title">CATALOGO DIGITAL, TIENDA MAYORISTA DE PRODUCTOS</h2>
             </div>
             <div class="col-12"><br><br></div>
-            <div class="col-12 d-flex justify-content-center"><a href="/catalogo" type="button" class="btn btn-success p-3 btn-block">CONTINUAR</a></div>
+            <div class="col-12 d-flex justify-content-center"><a href="/login" type="button" class="btn btn-success p-3 btn-block">CONTINUAR</a></div>
         </div>
     </div>
     {{-- Body Content --}}
