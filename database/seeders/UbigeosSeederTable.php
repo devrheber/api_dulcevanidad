@@ -1,7 +1,7 @@
 <?php
 namespace Database\Seeders;
 
-use App\Ubigeo;
+use App\Models\Ubigeo;
 use Illuminate\Database\Seeder;
 
 class UbigeosSeederTable extends Seeder
