@@ -3,6 +3,7 @@ namespace Database\Seeders;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
+use UbigeosSeederTable;
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,5 +16,6 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([UsersTableSeeder::class]);
         $this->call([BankTableSeeder::class]);
+        $this->call([UbigeosSeederTable::class]);
     }
 }

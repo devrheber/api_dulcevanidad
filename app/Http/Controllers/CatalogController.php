@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 use App\Models\Article;
 use App\Models\Bank;
 use App\Models\Category;
+use App\Models\Customer;
 use App\Models\Sale;
 use App\Models\SaleDetail;
 use App\Models\ShoppingCart;
 use App\Models\ShoppingCartDetail;
 use App\Models\SubCategory;
+use App\Ubigeo;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -24,6 +26,28 @@ class CatalogController extends Controller
             'articles' => Article::where('state', 1)->get()
         );
         return view('catalog.index')->with($data);
+    }
+
+    public function saveCustomer(Request $request) {
+        $customer = new Customer;
+        $customer->name = $request->post('name');
+        $customer->surnames = $request->post('surnames');
+        $customer->phone = $request->post('phone');
+        $customer->email = $request->post('email');
+        $customer->save();
+
+        $sale = Sale::find($request->post('sale_id'));
+        $sale->customer_id = $customer->id;
+        $sale->save();
+
+        return response()->json(true);
+    }
+
+    public function checkDelivery(Request $request) {
+        $sale = Sale::find($request->post('sale_id'));
+        $sale->type_delivery = $request->post('type');
+        $sale->save();
+        return response()->json(true);
     }
 
     public function shop() {
@@ -63,6 +87,7 @@ class CatalogController extends Controller
             $shoppingCart->state = 2;
             $shoppingCart->voucher = '0';
             $shoppingCart->payment_method_id = $request->post('payment_method');
+            $shoppingCart->total = $request->post('total');
             $shoppingCart->save();
             for($x = 0; $x < count($requestShoppingCart); $x++) {
                 $article = Article::find($requestShoppingCart[$x]['id']);
@@ -119,6 +144,8 @@ class CatalogController extends Controller
             $sale->voucher = $shoppingCart->voucher;
             $sale->payment_method_id = $shoppingCart->payment_method_id;
             $sale->customer_id = $shoppingCart->customer_id;
+            $sale->shopping_cart_id = $shoppingCart->id;
+            $sale->total = $shoppingCart->total;
             $sale->save();
 
 
@@ -145,6 +172,24 @@ class CatalogController extends Controller
                 'response' => false,
                 'sale' => null
             ));
+        }
+    }
+
+    public function getUbigeo($province, $search = '') {
+        if ($province !== 'LIMA') {
+            return response()->json(
+                Ubigeo::where([
+                    ['department', '!=', 'LIMA'],
+                    ['province', 'like', '%' . $search . '%']
+                ])->select('province')->distinct()->get('province')->take('15')
+            );
+        } else {
+            return response()->json(
+                Ubigeo::where([
+                    ['department', $province],
+                    ['province', 'like', '%' . $search . '%']
+                ])->select('province')->distinct()->get('province')->take('15')
+            );
         }
     }
 }

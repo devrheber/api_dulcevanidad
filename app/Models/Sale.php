@@ -20,4 +20,8 @@ class Sale extends Model
     public function payment_method() {
         return $this->belongsTo(PaymentMethod::class);
     }
+
+    public function shopping_cart() {
+        return $this->belongsTo(ShoppingCart::class);
+    }
 }

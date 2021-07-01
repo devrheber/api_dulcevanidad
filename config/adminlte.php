@@ -247,6 +247,21 @@ return [
                 ],
             ],
         ],
+        [
+            'text'    => 'Transacciones',
+            'icon'    => 'fas fa-fw fa-credit-card',
+            'submenu' => [
+                [
+                    'text' => 'Ventas',
+                    'url'  => '/ventas',
+                ],
+                [
+                    'text'    => 'Todas las operaciones',
+                    'url'     => '/operaciones',
+                ],
+            ],
+        ],
+
     ],
 
     /*
@@ -396,6 +411,16 @@ return [
                     'type' => 'js',
                     'asset' => true,
                     'location' => '/vendor/jquery-validation/localization/messages_es_PE.js',
+                ],
+            ],
+        ],
+        'Moment' => [
+            'active' => true,
+            'files' => [
+                [
+                    'type' => 'js',
+                    'asset' => false,
+                    'location' => 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js',
                 ],
             ],
         ],

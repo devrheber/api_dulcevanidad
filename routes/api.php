@@ -21,6 +21,9 @@ Route::get('getCatalogArticles', [CatalogController::class, 'getCatalogArticles'
 Route::get('getPaymentMethod', [CatalogController::class, 'getPaymentMethod'])->name('getPaymentMethod');
 Route::post('checkShoppingCart', [CatalogController::class, 'checkShoppingCart'])->name('checkShoppingCart');
 Route::post('completePayment', [CatalogController::class, 'completePayment'])->name('completePayment');
+Route::post('saveCustomer', [CatalogController::class, 'saveCustomer'])->name('saveCustomer');
+Route::post('checkDelivery', [CatalogController::class, 'checkDelivery'])->name('checkDelivery');
+Route::get('getUbigeo/{province}/{search?}', [CatalogController::class, 'getUbigeo'])->name('getUbigeo');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();

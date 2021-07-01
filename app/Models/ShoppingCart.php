@@ -12,4 +12,8 @@ class ShoppingCart extends Model
     public function shoppingCartDetail() {
         return $this->hasMany(ShoppingCartDetail::class);
     }
+
+    public function sale() {
+        return $this->hasOne(Sale::class);
+    }
 }

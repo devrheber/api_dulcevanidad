@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CatalogController;
 use App\Http\Controllers\ConfigurationController;
+use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -27,6 +28,7 @@ Route::get('/catalogo', [CatalogController::class, 'index']);
 Route::get('/carrito', [CatalogController::class, 'shop'])->name('shop');
 Route::get('/destino', [CatalogController::class, 'from'])->name('destino');
 Route::get('/pagar', [CatalogController::class, 'pay'])->name('pay');
+
 Route::group(['middleware' => 'auth'], function () {
 	Route::get('categorias', [ConfigurationController::class, 'categories']);
 	Route::post('saveCategory', [ConfigurationController::class, 'saveCategory']);
@@ -46,4 +48,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('metodos_pago', [ConfigurationController::class, 'payment_methods'])->name('payment_methods');
     Route::get('dtPaymentMethods', [ConfigurationController::class, 'dtPaymentMethods'])->name('dtPaymentMethods');
     Route::post('savePaymentMethod', [ConfigurationController::class, 'savePaymentMethod']);
+    Route::get('/ventas', [TransactionController::class, 'sales'])->name('ventas');
+    Route::get('/dtSales', [TransactionController::class, 'dtSales'])->name('dtSales');
+    Route::get('/operaciones', [TransactionController::class, 'operations'])->name('ventas');
+    Route::get('/dtOperations', [TransactionController::class, 'dtOperations'])->name('dtOperations');
 });
