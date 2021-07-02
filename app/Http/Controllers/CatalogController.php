@@ -11,7 +11,7 @@ use App\Models\SaleDetail;
 use App\Models\ShoppingCart;
 use App\Models\ShoppingCartDetail;
 use App\Models\SubCategory;
-use App\Ubigeo;
+use App\Models\Ubigeo;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
