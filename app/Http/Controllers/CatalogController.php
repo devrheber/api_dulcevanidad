@@ -70,8 +70,9 @@ class CatalogController extends Controller
         return response()->json(SubCategory::where('state', 1)->get());
     }
 
-    public function getCatalogArticles() {
-        return response()->json(Article::where('state', 1)->with('images')->get());
+    public function getCatalogArticles(Request $request) {
+        // throw new Exception(json_encode($request->all()));
+        return response()->json(Article::where('state', 1)->with('images')->paginate(10));
     }
 
     public function getPaymentMethod() {
